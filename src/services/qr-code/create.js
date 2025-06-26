@@ -1,9 +1,9 @@
 import prompt from "prompt"
-import { promptQrCode } from "../../prompts/prompt-qrcode.js"
+import { SchemaQrCode } from "../../prompts-schema/schema-qrcode.js"
 import { handle } from "./handle.js"
 
 export async function createQrcode() {
-  prompt.get(promptQrCode, handle)
+  prompt.get(SchemaQrCode, handle)
 
   prompt.start()
 }
